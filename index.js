@@ -109,11 +109,41 @@ fizzBuzz()
 // longestWord('My name is Brad') === ['name', 'brad'];
 // longestWord('Brad') === 'brad';
 
+
+const longestWord = string => {
+
+  let maxCount = 0
+  let max = ''
+  console.log(string.split(" "));
+  string.split(' ').forEach((el) => {
+    if (el.length > maxCount) {
+      maxCount = el.length;
+      max = el
+    }
+  }
+  )
+  return max
+}
+
+console.log(longestWord('My name is Brad'));
 // ### CHALLENGE 8: ARRAY CHUNKING
 // // Split an array into chunked arrays of a specific length
 // // ex:
 // chunkArray([1, 2, 3, 4, 5, 6, 7], 3) === [[1, 2, 3], [4, 5, 6], [7]];
 // chunkArray([1, 2, 3, 4, 5, 6, 7], 2) === [[1, 2], [3, 4], [5, 6], [7]];
+
+function chunkArray(array, numb) {
+
+  const newArray = []
+  // console.log("here", (array.slice(0, 3)))
+  for (let i = 0; i < array.length; i += numb) {
+
+    newArray.push(array.slice(i, i + numb))
+
+  } return newArray
+}
+
+console.log(chunkArray([1, 2, 3, 4, 5, 6, 7], 3));
 
 // ### CHALLENGE 9: FLATTEN ARRAY
 // Take an array of arrays and flatten to a single array
