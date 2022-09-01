@@ -15,8 +15,17 @@ console.log(reverseString("hello"));
 // #### CHALLENGE 2: VALIDATE A PALINDROME
 // // Return true if palindrome and false if not
 // // ex:
-// isPalindrome('racecar') === true;
-// isPalindrome('hello') == false;
+
+function isPalindrome(string) {
+
+  // const reversedString = string.split('').reverse().join('')
+  return string.split('').reverse().join('') == string ? true : false
+}
+
+console.log(isPalindrome('racecar'));//  === true;
+isPalindrome('hello') == false;
+
+
 
 // ### CHALLENGE 3: REVERSE AN INTEGER
 // // Return an integer in reverse
