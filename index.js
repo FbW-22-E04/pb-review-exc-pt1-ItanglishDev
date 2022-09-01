@@ -89,6 +89,16 @@ console.log(maxCharacter('javascript'));
 // ### CHALLENGE 6: FIZZBUZZ
 // Write a program that prints all the numbers from 1 to 100. For multiples of 3, instead of the number, print "Fizz", for multiples of 5 print "Buzz". For numbers which are multiples of both 3 and 5, print "FizzBuzz".
 
+const fizzBuzz = () => {
+  for (let i = 0; i <= 100; i++) {
+    i % 3 === 0 && i % 5 === 0 ? console.log('FizzBuzz') : i % 3 === 0 ? console.log('Fizz') : i % 5 === 0 ? console.log('Buzz') : console.log(i);;
+
+  }
+}
+
+fizzBuzz()
+
+
 // ### CHALLENGE 7: LONGEST WORD
 // Return the longest word of a string
 // SOLUTION 1 - Return a single longest word
