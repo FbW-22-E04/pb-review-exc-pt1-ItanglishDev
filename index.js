@@ -45,6 +45,23 @@ console.log(reverseInt(521));
 // ### CHALLENGE 4: CAPITALIZE LETTERS
 // // Return a string with the first letter of every word capitalized
 // //  ex:
+
+function capitalizeLetters(string) {
+
+  const array = string.split(' ')
+
+  let newArray = ''
+  for (const item of array) {
+
+    const firstPart = item.slice(0, 1)
+    const secondPart = item.slice(1)
+    // console.log(secondPart);
+    newArray += ((firstPart.toUpperCase() + secondPart)) + ' '
+  }
+  return newArray
+
+}
+console.log(capitalizeLetters('i love javascript'));
 // capitalizeLetters('i love javascript') === 'I Love Javascript';
 
 // ### CHALLENGE 5: MAX CHARACTER
