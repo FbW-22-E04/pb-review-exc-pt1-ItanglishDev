@@ -159,6 +159,17 @@ console.log(flattenArray([[1, 2], [3, 4], [5, 6], [7]]));
 // ex. isAnagram('elbow', 'below') === true
 // ex. isAnagram('Dormitory', ''dirty room##'') --> false
 
+function anagram(string, checkString) {
+
+  if (string.length != checkString.length)
+    return false
+  if (string.split('').sort().join("") != checkString.split('').sort().join(""))
+    return false
+  return true
+}
+
+console.log(anagram('elbow', 'below'));
+
 // ### CHALLENGE 11: ADD ALL NUMBERS
 // Return a sum of all parameters entered regardless of the amount of numbers
 // ex:
