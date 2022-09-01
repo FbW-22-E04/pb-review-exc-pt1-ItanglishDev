@@ -30,6 +30,16 @@ isPalindrome('hello') == false;
 // ### CHALLENGE 3: REVERSE AN INTEGER
 // // Return an integer in reverse
 // // ex:
+
+
+// function reverseInt(number) {
+
+const reverseInt = number =>
+  parseFloat(number.toString().split('').reverse().join(''))
+
+// }
+
+console.log(reverseInt(521));
 // reverseInt(521) === 125;
 
 // ### CHALLENGE 4: CAPITALIZE LETTERS
