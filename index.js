@@ -3,6 +3,15 @@
 // //  ex:
 // reverseString('hello') === 'olleh';
 
+function reverseString(string) {
+
+  return reversedString = string.split('').reverse().join('')
+}
+
+console.log(reverseString("hello"));
+
+
+
 // #### CHALLENGE 2: VALIDATE A PALINDROME
 // // Return true if palindrome and false if not
 // // ex:
