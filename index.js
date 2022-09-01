@@ -67,6 +67,23 @@ console.log(capitalizeLetters('i love javascript'));
 // ### CHALLENGE 5: MAX CHARACTER
 // // Return the character that is most common in a string
 // // ex:
+function maxCharacter(string) {
+
+  let maxCount = 0
+  let max = ''
+
+  string.split('').forEach((el) => {
+    if (string.split(el).length > maxCount) {
+      maxCount = string.split(el).length;
+      max = el
+    }
+  }
+  )
+  return max
+}
+
+console.log(maxCharacter('javascript'));
+
 // maxCharacter('javascript') == 'a';
 
 // ### CHALLENGE 6: FIZZBUZZ
