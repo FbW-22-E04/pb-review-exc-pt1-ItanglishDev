@@ -150,6 +150,10 @@ console.log(chunkArray([1, 2, 3, 4, 5, 6, 7], 3));
 // ex:
 // [[1, 2], [3, 4], [5, 6], [7]] = [1, 2, 3, 4, 5, 6, 7]
 
+const flattenArray = (array) => array.flat()
+
+console.log(flattenArray([[1, 2], [3, 4], [5, 6], [7]]));
+
 // ### CHALLENGE 10: ANAGRAM
 // Return true if anagram and false if not
 // ex. isAnagram('elbow', 'below') === true
