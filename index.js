@@ -168,12 +168,17 @@ function anagram(string, checkString) {
   return true
 }
 
+
 console.log(anagram('elbow', 'below'));
 
 // ### CHALLENGE 11: ADD ALL NUMBERS
 // Return a sum of all parameters entered regardless of the amount of numbers
 // ex:
 // addAll(2, 5, 6, 7) === 20;
+
+const addAll = (...val) => val.split('').reduce((acc, rec) => acc + rec, 0)
+
+console.log(addAll(2, 5, 6, 7));
 
 // ### CHALLENGE 12: SUM ALL PRIMES
 // Pass in a number to loop up to and add all of the prime numbers. A prime number is a whole number greater than 1 whose only factors are 1 and itself
